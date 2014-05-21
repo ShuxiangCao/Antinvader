@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AntinvaderDriver.WNET", "AntinvaderDriver\AntinvaderDriver.WNET.vcproj", "{78154184-95B0-47C1-9108-D714884955F6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KernelControler", "KernelControler\KernelControler.vcproj", "{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo", "Demo\Demo.vcproj", "{4497308C-6D87-411B-A0B0-40A00E885A83}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C} = {9F2DD7EA-A603-42BD-96BA-9231FF5E250C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		WNET checked|Win32 = WNET checked|Win32
+		WNET free|Win32 = WNET free|Win32
+		WNET2K checked|Win32 = WNET2K checked|Win32
+		WNET2K free|Win32 = WNET2K free|Win32
+		WNETXP checked|Win32 = WNETXP checked|Win32
+		WNETXP free|Win32 = WNETXP free|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78154184-95B0-47C1-9108-D714884955F6}.Debug|Win32.ActiveCfg = WNET2K checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.Debug|Win32.Build.0 = WNET2K checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.Release|Win32.ActiveCfg = WNET2K checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.Release|Win32.Build.0 = WNET2K checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET checked|Win32.ActiveCfg = WNET checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET checked|Win32.Build.0 = WNET checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET free|Win32.ActiveCfg = WNET free|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET free|Win32.Build.0 = WNET free|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET2K checked|Win32.ActiveCfg = WNET2K checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET2K checked|Win32.Build.0 = WNET2K checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET2K free|Win32.ActiveCfg = WNET2K free|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNET2K free|Win32.Build.0 = WNET2K free|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNETXP checked|Win32.ActiveCfg = WNETXP checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNETXP checked|Win32.Build.0 = WNETXP checked|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNETXP free|Win32.ActiveCfg = WNETXP free|Win32
+		{78154184-95B0-47C1-9108-D714884955F6}.WNETXP free|Win32.Build.0 = WNETXP free|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.Debug|Win32.Build.0 = Debug|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.Release|Win32.ActiveCfg = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.Release|Win32.Build.0 = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET checked|Win32.ActiveCfg = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET checked|Win32.Build.0 = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET free|Win32.ActiveCfg = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET free|Win32.Build.0 = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET2K checked|Win32.ActiveCfg = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET2K checked|Win32.Build.0 = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET2K free|Win32.ActiveCfg = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNET2K free|Win32.Build.0 = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNETXP checked|Win32.ActiveCfg = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNETXP checked|Win32.Build.0 = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNETXP free|Win32.ActiveCfg = Release|Win32
+		{9F2DD7EA-A603-42BD-96BA-9231FF5E250C}.WNETXP free|Win32.Build.0 = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.Debug|Win32.Build.0 = Debug|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.Release|Win32.ActiveCfg = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.Release|Win32.Build.0 = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET checked|Win32.ActiveCfg = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET checked|Win32.Build.0 = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET free|Win32.ActiveCfg = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET free|Win32.Build.0 = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET2K checked|Win32.ActiveCfg = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET2K checked|Win32.Build.0 = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET2K free|Win32.ActiveCfg = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNET2K free|Win32.Build.0 = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNETXP checked|Win32.ActiveCfg = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNETXP checked|Win32.Build.0 = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNETXP free|Win32.ActiveCfg = Release|Win32
+		{4497308C-6D87-411B-A0B0-40A00E885A83}.WNETXP free|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

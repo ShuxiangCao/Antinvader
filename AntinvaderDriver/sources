@@ -1,0 +1,18 @@
+# $Id$
+TARGETNAME=AntinvaderDriver
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+# Create browse info
+#BROWSER_INFO=1
+#BROWSERFILE=<some path>
+
+# Additional defines for the C/C++ preprocessor
+C_DEFINES=$(C_DEFINES)
+
+TARGETLIBS= $(TARGETLIBS) \
+            $(IFSKIT_LIB_PATH)\fltMgr.lib\
+            $(IFSKIT_LIB_PATH)\ntdll.lib
+
+SOURCES=AntinvaderDriver.cpp \
+        drvversion.rc

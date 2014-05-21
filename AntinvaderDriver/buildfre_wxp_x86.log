@@ -1,0 +1,11 @@
+BUILD: Examining d:\commer~1\antinv~1\antinv~3\antinv~2 directory for files to compile.
+oacr invalidate root:x86fre /autocleanqueue
+1>Compiling and Linking d:\commer~1\antinv~1\antinv~3\antinv~2 *************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+1>d:\commer~1\antinv~1\antinv~3\antinv~2: TARGETPATH is obj
+1>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+1> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""AntinvaderDriver.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo d:\commer~1\antinv~1\antinv~3\antinv~2\objfre_wxp_x86\i386\drvversion.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  /DNTDDI_VERSION=0x05010200   /Id:\commer~1\antinv~1\antinv~3\antinv~2\objfre_wxp_x86\i386 /ID:\WinDDK\760016~1.1\inc\api /ID:\WinDDK\760016~1.1\inc\api /ID:\WinDDK\760016~1.1\inc\ddk /ID:\WinDDK\760016~1.1\inc\ddk /ID:\WinDDK\760016~1.1\inc\crt .\drvversion.rc
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1> D:\WinDDK\760016~1.1\Bin\x86\oacr\oacrcl @d:\commer~1\antinv~1\antinv~3\antinv~2\objfre_wxp_x86\i386\cl.rsp
+1> D:\WinDDK\760016~1.1\Bin\x86\oacr\oacrlink /out:d:\commer~1\antinv~1\antinv~3\antinv~2\objfre_wxp_x86\i386\AntinvaderDriver.sys /machine:ix86 @d:\commer~1\antinv~1\antinv~3\antinv~2\objfre_wxp_x86\i386\lnk.rsp

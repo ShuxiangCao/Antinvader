@@ -1,0 +1,96 @@
+;;;
+;;; AntinvaderDriver
+;;;
+;;;
+;;; Copyright (c) 1999 - 2001, Microsoft Corporation
+;;;
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = "ActivityMonitor"                         ;This is determined by the work this filter driver does
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}    ;This value is determined by the Class
+Provider    = %Msft%
+DriverVer   = 06/16/2007,1.0.0.1
+CatalogFile = AntinvaderDriver.cat
+
+
+[DestinationDirs]
+DefaultDestDir          = 12
+AntinvaderDriver.DriverFiles  = 12            ;%windir%\system32\drivers
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc          = %ServiceDescription%
+CopyFiles           = AntinvaderDriver.DriverFiles
+
+[DefaultInstall.Services]
+AddService          = %ServiceName%,,AntinvaderDriver.Service
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles   = AntinvaderDriver.DriverFiles
+
+[DefaultUninstall.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deleting
+
+;
+; Services Section
+;
+
+[AntinvaderDriver.Service]
+DisplayName      = %ServiceName%
+Description      = %ServiceDescription%
+ServiceBinary    = %12%\%DriverName%.sys        ;%windir%\system32\drivers\
+Dependencies     = "FltMgr"
+ServiceType      = 2                            ;SERVICE_FILE_SYSTEM_DRIVER
+StartType        = 3                            ;SERVICE_DEMAND_START
+ErrorControl     = 1                            ;SERVICE_ERROR_NORMAL
+LoadOrderGroup   = "FSFilter Activity Monitor"
+AddReg           = AntinvaderDriver.AddRegistry
+
+;
+; Registry Modifications
+;
+
+[AntinvaderDriver.AddRegistry]
+HKR,,"DebugFlags",0x00010001 ,0x0
+HKR,"Instances","DefaultInstance",0x00000000,%DefaultInstance%
+HKR,"Instances\"%Instance1.Name%,"Altitude",0x00000000,%Instance1.Altitude%
+HKR,"Instances\"%Instance1.Name%,"Flags",0x00010001,%Instance1.Flags%
+
+;
+; Copy Files
+;
+
+[AntinvaderDriver.DriverFiles]
+%DriverName%.sys
+
+[SourceDisksFiles]
+AntinvaderDriver.sys = 1,,
+
+[SourceDisksNames]
+1 = %DiskId1%,,,
+
+;;
+;; String Section
+;;
+
+[Strings]
+Msft                    = "Microsoft Corporation"
+ServiceDescription      = "AntinvaderDriver Mini-Filter Driver"
+ServiceName             = "AntinvaderDriver"
+DriverName              = "AntinvaderDriver"
+DiskId1                 = "AntinvaderDriver Device Installation Disk"
+
+;Instances specific information.
+DefaultInstance         = "AntinvaderDriver Instance"
+Instance1.Name          = "AntinvaderDriver Instance"
+Instance1.Altitude      = "370030"
+Instance1.Flags         = 0x0              ; Allow all attachments
+
