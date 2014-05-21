@@ -1,9 +1,6 @@
 ;;;
 ;;; AntinvaderDriver
 ;;;
-;;;
-;;; Copyright (c) 1999 - 2001, Microsoft Corporation
-;;;
 
 [Version]
 Signature   = "$Windows NT$"
