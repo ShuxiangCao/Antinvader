@@ -11,7 +11,7 @@ Also if you have interests to continue my work, I'll be glad that you fork this 
 
 ## How to use it
 
-There is a demo program here, you can have a peek on it.
+Use the inf file to load the driver then there is a demo program here showing how to control the driver. you may have a peek on it.
 
 ## About the language
 
